@@ -128,7 +128,12 @@ public class TaskController extends HttpServlet {
 		List<User> uresult = new ArrayList<User>();
 		List<Task> taskresult = new ArrayList<Task>();
 		List<Task> taskresult1 = new ArrayList<Task>();
-		int userid = 1115;
+		
+		
+		HttpSession session = request.getSession(true);
+         	int userid = (Integer) session.getAttribute("userId");
+		
+		
 		for (Member m : memberList) {
 			int uid = m.getUserId();
 			if (m.getUserId() == userid) {

@@ -25,16 +25,11 @@
 <body bgcolor="#f5f5f5">
 	<center>
 		<div>
-
-            <c:forEach var="t" items="${taskresult1}">
-
-                <font size="8"> ${t.taskname}</font>
-
-            </c:forEach>
-
-            <font color=red> ${error} </font>
-
-        </div>
+			<c:forEach var="t" items="${taskresult1}">
+				<font size="8"> ${t.taskname}</font>
+			</c:forEach>
+			<font color=red> ${error} </font>
+		</div>
 	</center>
 	<br>
 	<br>
@@ -42,3 +37,4 @@
 			Home Page</font></a>
 </body>
 </html>
+
